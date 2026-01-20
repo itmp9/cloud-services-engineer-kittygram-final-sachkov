@@ -195,4 +195,8 @@ jobs:
           message: |
             Деплой Kittygram успешно завершен!
             
+            Автор: ${{ github.actor }}
+            Коммит: ${{ github.event.commits[0].message }}
+            Ссылка: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+            
             Проект доступен по адресу: http://${{ secrets.HOST }}
